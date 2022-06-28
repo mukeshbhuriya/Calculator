@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-image: url("https://source.unsplash.com/random/1920x720/?desk,landscape");
+}
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Permanent+Marker&display=swap');
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(250, 238, 6) 50%, #ffae00 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  width: 80%;
+  left:50%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Carter One', cursive;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+.st-btn{
+  background-color: transparent;
+  color: black;
+  font-family: 'Carter One', cursive;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 33px;
+  border-color: .2px black;
+}
+.st-btn:hover{
+  opacity: 0.6;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+
+#calculator{
+	width: 400px;
+	background: #242632;
+	overflow: hidden;
+	border-bottom-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+    margin: 100px auto;
+    border: 2px solid black;
+    padding: 2px solid black;
+}
+#result{
+    clear: both;
+    padding: 10px solid black;
+	background: #9EB3AF;
+	font-family: digital;
+	font-size: 24px;
+	text-align: right;
+	letter-spacing: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #919191;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+#keyboard{
+	height: 400px;
+}
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 20px;
+}
+.casio {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.number, .empty{
+	background-color: gray;
+    color: white;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 15px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+button:nth-child(1){
+	font-size: 20px;
+	background-color: white;
+}
+button:nth-child(2){
+	font-size: 20px;
+	background-color: whitesmoke;
+}
+button:nth-child(3){
+	font-size: 20px;
+	background-color: #17d7d4;
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #f48609;
+}
+button:nth-child(5){
+	font-size: 20px;
+	background-color: #2d7c85;
+}
+button:nth-child(10){
+	font-size: 20px;
+	background-color: #a79fa5;
+}
+button:nth-child(15){
+	font-size: 20px;
+	background-color: #1dbdad;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #1e6b24;
+}
